@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-container .slide1 {
+  background: url(../images/1.jpg) no-repeat center;
+  background-size: 100% 100%;
+  filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+  -moz-background-size: 100% 100%;
+}
+.swiper-container .slide1 #img {
+  animation: rotation 3s linear infinite;
+  width: 3vw;
+  height: 3vw;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
